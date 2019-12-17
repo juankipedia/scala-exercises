@@ -67,6 +67,7 @@ object EWalletApp {
 
   def saveToFile(){
     val o = new PrintWriter(fileName)
+    o.println("Client Reference | PIN | Amount available |")
     for(ew <- eWalletsbuffer){
       o.println(ew.getFormat)
     } 
@@ -77,6 +78,7 @@ object EWalletApp {
     eWalletsbuffer = ArrayBuffer[EWallet]()
     val in = Source.fromFile(fileName)
     val lines = in.reset.getLines
+    val line = lines.next
     while(! lines.isEmpty){
       val line = lines.next
       val eWalletList = line.split(separator)

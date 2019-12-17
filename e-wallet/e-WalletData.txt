@@ -1,2 +1,5 @@
-juan,93363,49.0
-diego,87754,50.0
+Client Reference | PIN | Amount available |
+e22j,87754,50.0
+e31j,63879,3333.0
+e33j,82482,4.0
+e22k,88450,999.0
